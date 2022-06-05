@@ -8,13 +8,16 @@
 
 int main(void)
 {
-	
-	char word[28]="0, 1, 2, 3, 4, 5, 6, 7, 8, 9";
-	int i = 0;
+	int i = '0';
 
-	while (i < 28)
+	while (i <= '9')
 	{
-		putchar(word[i]);
+		putchar(i);
+		if (i != '9')
+		{
+			putchar(',');
+			putchar(' ');
+		}
 		i++;
 	}
 	putchar('\n');
