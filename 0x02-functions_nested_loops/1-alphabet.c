@@ -7,7 +7,6 @@
  */
 void print_alphabet(void)
 {
-    
 	char alphabet[26] = "abcdefghijklmnopqrstuvwxyz";
 	int i = 0;
 
