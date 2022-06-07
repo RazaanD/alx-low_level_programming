@@ -1,9 +1,9 @@
-#include "main.h"
-
+include "holberton.h"
 /**
- * main - check the code.
+ * print_alphabet_x10 - Entry point to the loops
  *
-  * Return: 0
+ * Description: Prints the alphabetx10 using a library followed by a new line.
+ * Return: 0
  */
 void print_alphabet_x10(void)
 {
@@ -23,5 +23,4 @@ void print_alphabet_x10(void)
 		_putchar('\n');
 		i++;
 	}
-return 0;
 }
