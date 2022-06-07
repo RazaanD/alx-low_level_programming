@@ -3,23 +3,25 @@
 /**
  * main - check the code.
  *
- * Return: Always 0.
+  * Return: 0
  */
-int main(void)
+void print_alphabet_x10(void)
 {
+
 	char alphabet[26] = "abcdefghijklmnopqrstuvwxyz";
-	int i = 0; j;
-	j = 0;
-	while(j<10)
-{
-		while (i < 26)
+	int i = 0;
+	int j;
+
+	while (i < 10)
+	{
+		j = 0;
+		while (j < 26)
 		{
-		printf(alphabet[i]);
+			_putchar(alphabet[j]);
 			j++;
 		}
-		printf('\n');
+		_putchar('\n');
 		i++;
 	}
-
-    return (0);
+return 0;
 }
