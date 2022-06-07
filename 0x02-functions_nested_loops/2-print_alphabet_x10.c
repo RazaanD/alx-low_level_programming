@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -9,18 +8,17 @@
 int main(void)
 {
 	char alphabet[26] = "abcdefghijklmnopqrstuvwxyz";
-	int i = 0;
-	int repertition = 1;
-
-	while(repertition <= 10){
+	int i = 0; j;
+	j = 0;
+	while(j<10)
+{
 		while (i < 26)
 		{
-			putchar(alphabet[i]);
-			i++;
+		printf(alphabet[i]);
+			j++;
 		}
-		putchar('\n');
-		repertition++;
-		i=0;
+		printf('\n');
+		i++;
 	}
 
     return (0);
