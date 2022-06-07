@@ -1,20 +1,12 @@
 #include "main.h"
 /**
- * print_alphabet
+ * print_alphabet- entry 
  *
- * Description: Prints the alphabet followed by a new line.
+ * Description: Prints the alphabet in lowercase followed by a new line.
  * Return: 0
  */
-void print_alphabet(void)
+void main(void)
 {
-
-	char alphabet[26] = "abcdefghijklmnopqrstuvwxyz";
-	int i = 0;
-
-	while (i < 26)
-	{
-	putchar(alphabet[i]);
-		i++;
-	}
-	putchar('\n');
+    print_alphabet();
+    return (0);
 }
