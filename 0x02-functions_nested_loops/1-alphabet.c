@@ -5,8 +5,7 @@
  * Description: Prints the alphabet followed by a new line.
  * Return: 0
  */
-
-int main(void)
+void print_alphabet(void)
 {
 
 	char alphabet[26] = "abcdefghijklmnopqrstuvwxyz";
