@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * _islower - Entry point to receive chars
  * @c: Receive the character
