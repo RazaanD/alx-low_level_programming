@@ -1,25 +1,26 @@
-#include <stdio.h>
 #include "main.h"
-
 /**
- * main - check the code.
+ * print_alphabet_x10 - Entry point to the loops
  *
- * Return: Always 0.
+ * Description: Prints the alphabetx10 using a library followed by a new line.
+ * Return: 0
  */
 void print_alphabet_x10(void)
 {
+
 	char alphabet[26] = "abcdefghijklmnopqrstuvwxyz";
 	int i = 0;
-	int repertition = 1;
+	int j;
 
-	while(repertition <= 10){
-		while (i < 26)
+	while (i < 10)
+	{
+		j = 0;
+		while (j < 26)
 		{
-			putchar(alphabet[i]);
-			i++;
+			_putchar(alphabet[j]);
+			j++;
 		}
-		putchar('\n');
-		repertition++;
-		i=0;
+		_putchar('\n');
+		i++;
 	}
 }
