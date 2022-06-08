@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
  * print_times_table - prints times table
@@ -48,19 +48,4 @@ while (a <= n)
 	_putchar('\n');
 	a++;
 }
-}
-		else
-		{
-			_putchar('0' + rep / 100);
-			_putchar('0' + (rep - 100) / 10);
-			_putchar('0' + rep % 10);
-		}
-		if (b < n)
-		{
-			_putchar(',');
-			_putchar(' ');
-		}
-	}
-	_putchar('\n');
-	a++;
 }
