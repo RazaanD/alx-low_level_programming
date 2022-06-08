@@ -6,7 +6,7 @@
  *
  * Return: Always 0.
  */
-int main(void)
+void print_alphabet_x10(void)
 {
 	char alphabet[26] = "abcdefghijklmnopqrstuvwxyz";
 	int i = 0;
@@ -22,6 +22,4 @@ int main(void)
 		repertition++;
 		i=0;
 	}
-
-    return (0);
 }
