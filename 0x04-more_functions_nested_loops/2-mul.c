@@ -1,14 +1,16 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * _isdigit - Check for a digit 0 through 9
- * @a: integer one
- * @b: integer two
+ * mul - Function that multiplies two integers.
+ * @a: Integer one
+ * @b: Integer two
+ *
  * Return: Integer
  */
 
 int mul(int a, int b)
 {
-int mul = a * b;
-		return (0);
+	int res = a * b;
+
+	return (res);
 }
