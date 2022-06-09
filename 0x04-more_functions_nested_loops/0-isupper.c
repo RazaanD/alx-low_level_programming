@@ -8,8 +8,8 @@
 
 int _isupper(int c)
 {
-	if (c == 'C')
-    return (1);
-    else
- return (0);
+	if (c == 'A')
+    		return (1);
+    	else if(c == 'a')
+ 		return (0);
 }
