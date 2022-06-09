@@ -9,8 +9,9 @@
 int _isupper(int c)
 
 {
-	if (c >='C')
-    return (1);
-    else
- return (0);
+c = 'C';
+    printf(1);
+    c = 'abcdefghijklmnopqrstuvwqyz';
+    printf(0);
+    return (0);
 }
