@@ -9,25 +9,22 @@
  */
 
 int largest_number(int a, int b, int c)
+scanf(“%d%d%d”, &a, &b, &c);
 {
-int largest;
+    int largest;
 
-if (a > b && a > c)
-{
-	largest = a;
-}
-else if (b > c && b > a)
-{
-	largest = b;
-}
-else if (c > b && c > a)
-{
-	largest = c;
-}
-else
-{
-	largest = b;
-}
+    if (a >= b && b >= c)
+    {
+        largest = a;
+    }
+    else if (b > a && a >= c)
+    {
+        largest = b;
+    }
+    else
+    {
+        largest = c;
+    }
 
-return (0);
+    return (largest);
 }
