@@ -4,8 +4,8 @@
  * _isdigit - Check for a digit 0 through 9
  * @c: The character to check
  *
- * Return 1 if c is a digit
- * Otherwise return 0
+ * Return: if is upper return 1.
+ * On false 0
  */
 
 int _isdigit(int c)
