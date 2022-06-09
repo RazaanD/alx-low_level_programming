@@ -7,8 +7,8 @@
  * Return: Integer
  */
 
-int mul(int a, int b);
+int mul(int a, int b)
 {
-int i(a * b);
-		return (i);
+int i = a * b;
+		return (0);
 }
