@@ -1,20 +1,17 @@
 #include "main.h"
+
 /**
- * print_alphabet - Entry point function
+ * _isupper - Check if the character is Uppercase
+ * @c: The character to check
  *
- * Description: Prints the alphabet using a library followed by a new line.
- * Return: 0
+ * Return: if is upper return 1.
+ * On false 0
  */
-void print_alphabet(void)
+
+int _isupper(int c)
 {
-
-	char alphabet[26] = "abcdefghijklmnopqrstuvwxyz";
-	int i = 0;
-
-	while (i < 26)
-	{
-		_putchar(alphabet[i]);
-		i++;
-	}
-	_putchar('\n');
+	if (c >= 'A' && c <= 'Z')
+		return (1);
+	else
+		return (0);
 }
