@@ -2,8 +2,8 @@
 /**
  * times_table - Entry point.
  *
- * Description: prints every minute of the day of Jack Bauer.
- * Return: void
+ * Description:prints the 9 times table, starting with 0.
+ * Return: 0
  */
 void times_table(void)
 {
