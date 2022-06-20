@@ -1,25 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
 /**
- * main - entry point for keygen
- *
- * Return: 0
-*/
-
+ * main - generates keygen.
+ * Return: 0 Always.
+ */
 int main(void)
 {
-	int c, sum, last;
+	int r = 0, c = 0;
+	time_t t;
 
-	srand(time(NULL));
-	for (sum = 0, last = 2772; last > 122; sum ++)
+	srand((unsigned int) time(&t));
+	while (c < 2772)
 	{
-		c = (rand() % 128) + 1;
-		printf("%c", c);
-		last -= c;
+		r = rand() % 128;
+		if ((c + r) > 2772)
+			break;
+		c = c + r;
+		printf("%c", r);
 	}
-	printf("%c", last);
-
+	printf("%c\n", (2772 - c));
 	return (0);
 }
