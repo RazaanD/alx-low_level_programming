@@ -1,73 +1,62 @@
 #include "main.h"
 
-/**
- * wildcmp - check the code for Holberton School students.
- * @s1: string
- * @s2: string
- * Return: Always 0.
- */
+int find_strlen(char *s);
+int check_palindrome(char *s, int len, int index);
+int is_palindrome(char *s);
 
-int wildcmp(char *s1, char *s2)
+/**
+ * find_strlen - Returns the length of a string.
+ * @s: The string to be measured.
+ *
+ * Return: The length of the string.
+ */
+int find_strlen(char *s)
 {
-return (checker(s1, s2, 0, 0, -1));
+	int len = 0;
+
+	if (*(s + len))
+	{
+		len++;
+		len += find_strlen(s + len);
+	}
+
+	return (len);
 }
 
 /**
- * checker - helper
- * @s1: string
- * @s2: string
- * @a: int
- * @b: int
- * @wildUsed: int
- * Return: Always 0.
+ * check_palindrome - Checks if a string is a palindrome.
+ * @s: The string to be checked.
+ * @len: The length of s.
+ * @index: The index of the string to be checked.
+ *
+ * Return: If the string is a palindrome - 1.
+ *         If the string is not a palindrome - 0.
  */
-int checker(char *s1, char *s2, int a, int b, int wildUsed)
+int check_palindrome(char *s, int len, int index)
 {
+	if (s[index] == s[len / 2])
+		return (1);
 
-//printf("s1 <%c> a <%i> s2 <%c> b <%i> \n", s1[a], a, s2[b], b);
+	if (s[index] == s[len - index - 1])
+		return (check_palindrome(s, len, index + 1));
 
-if (s1[a] != '\0')
-{	
-	if (s2[b] == '\0')
-		return (0);
-	else if (s2[b] == '*')
-	{
-		if (s2[b + 1] == '*'){
-			//printf("Pass 1\n");
-			return (checker(s1, s2, a, b + 1, b));
-		}
-		else if (s2[b + 1] == s1[a]){
-			//printf("Pass 2\n");
-			return (checker(s1, s2, a, b + 1, b));
-		}	
-		else if (s1[a + 1] != s2[b + 1]){
-			//printf("Pass 3\n");
-			return (checker(s1, s2, a + 1, b, b));	
-		}
-		else if (s1[a + 1] == s2[b + 1]){
-			//printf("Pass 3\n");
-			return (checker(s1, s2, a + 1, b + 1, b));	
-		}
-		
-	}
-	else if ((s1[a] == s2[b]) || (s2[b] == '*' && s2[b + 1] == s1[a + 1])){
-		//printf("Pass 4\n");
-		return (checker(s1, s2, a + 1, b + 1, wildUsed));
-	}
-	else
-	{
-		if (wildUsed == -1)
-		{
-			//printf("No wild card\n");
-			return (0);
-		}
-		//printf("Back to wildcard\n");
-		return (checker(s1, s2, a, wildUsed, wildUsed));
-	}
+	return (0);
 }
-if (s2[b] != '\0')
-	return 0;
 
-return (1);
+/**
+ * is_palindrome - Checks if a string is a palindrome.
+ * @s: The string to be checked.
+ *
+ * Return: If the string is a palindrome - 1.
+ *         If the string is not a palindrome - 0.
+ */
+int is_palindrome(char *s)
+{
+	int index = 0;
+	int len = find_strlen(s);
 
+	if (!(*s))
+		return (1);
+
+	return (check_palindrome(s, len, index));
 }
