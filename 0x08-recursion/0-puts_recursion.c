@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- *Prints a string with recursion.
- *_puts_recursion - a function that prints a string, followed by a new line
+ * _puts_recursion - Prints a string with recursion.
+ * Desc: _memset
  * @c: char type
- * char type is returned
+ * char type returned
  **/
 
 void _puts_recursion(char *c)
