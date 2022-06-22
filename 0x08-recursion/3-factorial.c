@@ -6,7 +6,7 @@
  * indicates an error
 **/
 
-int factorial(int n)
+int factorial(int S)
 {
 	if (S < 0)
 		return (-1);
