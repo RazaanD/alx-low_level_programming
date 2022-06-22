@@ -71,5 +71,3 @@ if (s2[b] != '\0')
 return (1);
 
 }
-© 2022 GitHub, Inc.
-Term
