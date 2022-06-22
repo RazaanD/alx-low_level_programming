@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  *Prints a string with recursion.
+ *_puts_recursion - a function that prints a string, followed by a new line
  * @c: char type
  * char type is returned
  **/
