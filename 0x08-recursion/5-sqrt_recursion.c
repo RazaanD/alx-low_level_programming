@@ -19,7 +19,7 @@ int _sqrt_rec(int i, int r)
 if (i <= 0)
 return (-1);
 
-if (r * r > n)
+if (r * r > i)
 
 return (-1);
 
