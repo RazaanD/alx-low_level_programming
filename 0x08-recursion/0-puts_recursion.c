@@ -15,5 +15,5 @@ return;
 else
 _putchar(*c);
 c++;
-_puts_recursion(s);
+_puts_recursion(c);
 }
