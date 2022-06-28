@@ -1,6 +1,6 @@
 #include <stdio.h>
-/*
- * main - Prints string followed by a new line using puts function
+/**
+ * main - Print a string followed by a new line using put
  * uses puts function
  * returns : "Programming is like building a multilingual puzzle
  */
