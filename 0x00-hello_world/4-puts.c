@@ -1,9 +1,7 @@
-#include <stdio.h>
 /*
- * main - Prints statement followed by a new lines.
+ * main - Prints string followed by a new line using puts function
  * uses puts function
  * returns : "Programming is like building a multilingual puzzle
- * ends with the value 0
  */
 int main(void)
 {
