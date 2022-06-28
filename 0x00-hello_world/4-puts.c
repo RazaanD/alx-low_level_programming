@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main - Print a string followed by a new line using put
- * uses puts function
- * returns : "Programming is like building a multilingual puzzle
+ * main - Print a string using put
+ *
+ * Return: "Programming is like building a multilingual puzzle
  */
 
 int main(void)
