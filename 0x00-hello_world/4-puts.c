@@ -1,3 +1,4 @@
+#include <stdio.h>
 /*
  * main - Prints string followed by a new line using puts function
  * uses puts function
