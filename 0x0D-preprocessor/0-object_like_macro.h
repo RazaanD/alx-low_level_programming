@@ -1,4 +1,6 @@
-#ifndef main_h_
-#define main_h_
+#ifndef MACRO_H
+#define MACRO_H
+
 #define SIZE 1024
+
 #endif
