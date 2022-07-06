@@ -1,16 +1,49 @@
+#include <stdlib.h>
 #include <stdio.h>
-#include "function_pointers.h"
 
 /**
- * int_index -  function that searches for an integer.
- * @size: is the number of elements in the array array
- * @array: an array
- * @cmp: is a pointer to the function to be used to compare values
+ * print_opcodes - print the opcodes of this program
+ * @a: address of the main function
+ * @n: number of bytes to print
  *
- * Return: returns the index of the first element for which the cmp
- * function does not return 0
+ * Return: void
  */
-
-int int_index(int *array, int size, int (*cmp)(int))
+void print_opcodes(char *a, int n)
 {
+	int i;
+
+	for (i = 0; i < n; i++)
+	{
+		printf("%.2hhx", a[i]);
+		if (i < n - 1)
+			printf(" ");
+	}
+	printf("\n");
+
+}
+
+/**
+ * main - prints the opcodes of its own main function
+ * @argc: number of arguments passed to the function
+ * @argv: array of pointers to arguments
+ *
+ * Return: always O
+ */
+int main(int argc, char **argv)
+{
+	int n;
+
+	if (argc != 2)
+	{
+		printf("Error\n");
+		exit(1);
+	}
+	n = atoi(argv[1]);
+	if (n < 0)
+	{
+		printf("Error\n");
+		exit(2);
+	}
+	print_opcodes((char *)&main, n);
+	return (0);
 }
